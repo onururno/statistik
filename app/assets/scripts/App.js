@@ -1,8 +1,10 @@
-import '../styles/styles.css'
-import typing from './modules/typing'
+import '../styles/styles.css';
+import chartjs from './modules/chartjs';
+import post from './modules/post';
 
-typing()
+chartjs();
+post();
 
 if (module.hot) {
   module.hot.accept()
-}
+};

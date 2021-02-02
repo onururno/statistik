@@ -1,0 +1,32 @@
+#container-big-graph{
+    background-color: rgb(255, 239, 221);
+    min-height: 100vh;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.list{
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: white;
+}
+
+
+.list:nth-child(1){
+    border: 5px solid  rgb(255, 168, 142);
+}
+.list:nth-child(2){
+    border: 5px solid  rgb(196, 183, 74);
+}
+.list:nth-child(3){
+    border: 5px solid  rgb(124, 255, 124);
+}
+.list:nth-child(4){
+    border: 5px solid rgb(125, 201, 252);
+}

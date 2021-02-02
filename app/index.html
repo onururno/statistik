@@ -2,47 +2,54 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RPG Typing Game</title>
-  <meta name="keywords" content="RPG Game, Typing Game, Project">
-  <meta name="description" content="Beat the Enemy by typing as fast as possible and become the best">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <title>Statistik</title>
+  <meta name="keywords" content="Statistik">
+  <meta name="description" content="Statistik Webpages">
 </head>
 <body>
-  <button id="settings-btn" class="settings-btn">
-    <i class="fas fa-cog"></i>
-</button>
-
-<div id="settings" class="settings">
-    <form id="settings-form">
-        <div>
-            <label for="difficulty">Difficulty</label>
-            <select name="" id="difficulty">
-                <option onclick="location.reload()" value="easy">Easy</option>
-                <option onclick="location.reload()" value="medium">Medium</option>
-                <option onclick="location.reload()" value="hard">Hard</option>
-            </select>
+<section id="container-big-graph" class="container-big-graph">
+    
+    <canvas id="myChart"></canvas>
+        <div class="list-container">
+            <div class="list">
+                <h2>pageloads:</h2>
+                <h2 id="pageloads">0</h2>
+            </div>
+            <div class="list">
+                <h2>Unique Users:</h2>
+                <h2 id="unique-users">0</h2>
+            </div>
+            <div class="list">
+                <h2>Abos:</h2>
+                <h2 id="abos">0</h2>
+            </div>
+            <div class="list">
+                <h2>Obdens:</h2>
+                <h2 id="obdens">0</h2>
+            </div>
         </div>
-    </form>
-</div>
+</section>
 
-<div class="container">
-    <h2>Speed Typer</h2>
-    <small>Type the following:</small>
+<section id="overview-container" class="overview-container">
 
-    <h1 id="word"></h1>
+    <div class="filter-container">
+        <input type="text" id="filter" class="filter" placeholder="Filter posts...">
+    </div>
 
-    <input type="text" id="text" autocomplete="off" placeholder="Type the word here...">
+    <div id="post-container">
+       
+    </div>
 
-    <p class="time-container">
-        Time left: <span id="time">10s</span>
-    </p>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
 
-    <p class="score-container">
-        Score: <span id="score">0</span>
-    </p>
+</section>
 
-    <div id="end-game-container" class="end-game-container"></div>
-</div>
+
+
   
 </body>
 </html>
